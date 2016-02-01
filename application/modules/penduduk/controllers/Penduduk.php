@@ -75,6 +75,7 @@ class Penduduk extends MX_Controller {
 			//die();
             $nik = $this->input->post('nik');
             $nama = $this->input->post('nama');
+            $agama = $this->input->post('agama');
             $tgl_lahir = $this->input->post('tanggal_lahir');
             $tempat_lahir = $this->input->post('tempat_lahir');
             $jenis_kelamin = $this->input->post('jenis_kelamin');
@@ -98,7 +99,8 @@ class Penduduk extends MX_Controller {
                 'pendidikan' => $pendidikan,
                 'kewarganegaraan' => $kewarganegaraan,
                 'tgl_pendaftaran' => $tgl_pendaftaran,
-                'tgl_update' => $tgl_update
+                'tgl_update' => $tgl_update, 
+				'agama' => $agama
             ));
 			/*
 			if($insert) {
@@ -173,6 +175,7 @@ class Penduduk extends MX_Controller {
 			$id = $this->input->post('id');
             $nik = $this->input->post('nik');
             $nama = $this->input->post('nama');
+            $agama = $this->input->post('agama');
             $tgl_lahir = $this->input->post('tanggal_lahir');
             $tempat_lahir = $this->input->post('tempat_lahir');
             $jenis_kelamin = $this->input->post('jenis_kelamin');
@@ -196,7 +199,8 @@ class Penduduk extends MX_Controller {
                 'pendidikan' => $pendidikan,
                 'kewarganegaraan' => $kewarganegaraan,
                 'tgl_pendaftaran' => $tgl_pendaftaran,
-                'tgl_update' => $tgl_update
+                'tgl_update' => $tgl_update, 
+				'agama' => $agama
             ));
 			if ($insert) {
                 $this->session->set_flashdata('message', "<p class='alert alert-success' >Update Data Penduduk Berhasil <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button></p>");

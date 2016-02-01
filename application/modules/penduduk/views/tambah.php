@@ -161,11 +161,12 @@
             <div class="form-group">
               <label for="exampleInputEmail1">Status Kawin</label>
               <?php 
-              echo form_dropdown('status_kawin', array(
-                '1' => 'Kawin',
-                '2' => 'Belum Kawin',
-                '3' => 'Janda/Duda',
-              ),
+			  $status_nikah = $this->db->get('status_nikah')->result_array();
+			  $status_nikah_arr = array();
+			  foreach($status_nikah as $val) {
+				$status_nikah_arr[$val['id']] = $val['nama'];
+			  }
+              echo form_dropdown('status_kawin', $status_nikah_arr,
               $this->form_validation->set_value('status_kawin'), array('class' => 'form-control')
               );
               ?>

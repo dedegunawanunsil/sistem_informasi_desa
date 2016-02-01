@@ -343,7 +343,7 @@ if (file_exists($assets_file.$user->id.".jpg")) {
                 <i class="fa fa-database"></i> <span>Master Data</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<?php $modul_name = array('penduduk' => 'Data Penduduk', 'keluarga' => 'Data Keluarga',  'anggota_keluarga' => 'Hubungan Keluarga', 'agama' =>  'Data Agama',  'kampung' =>  'Data Kampung', 'pendidikan' =>  'Data Pendidikan', 'pekerjaan' =>  'Data Pekerjaan'); ?>
+				<?php $modul_name = array('penduduk' => 'Data Penduduk', 'keluarga' => 'Data Keluarga',  'anggota_keluarga' => 'Hubungan Keluarga', 'agama' =>  'Data Agama',  'kampung' =>  'Data Kampung', 'pendidikan' =>  'Data Pendidikan', 'pekerjaan' =>  'Data Pekerjaan', 'status_nikah' =>  'Status Nikah'); ?>
 				<?php 
 				foreach($modul_name as $key => $value) {
 					echo '<li><a href="'.base_url($key).'"><i class="fa fa-circle-o"></i>'.$value.'</a></li>';
@@ -356,7 +356,7 @@ if (file_exists($assets_file.$user->id.".jpg")) {
                 <i class="fa fa-file"></i> <span>Laporan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<?php $modul_name = array('laporan_penduduk' => 'Penduduk &amp; Keluarga', 'laporan_lain' =>  'Laporan Lain'); ?>
+				<?php $modul_name = array('laporan_penduduk' => 'Penduduk &amp; Keluarga', /* 'laporan_lain' =>  'Laporan Lain' */); ?>
 				<?php 
 				foreach($modul_name as $key => $value) {
 					echo '<li><a href="'.base_url($key).'"><i class="fa fa-circle-o"></i>'.$value.'</a></li>';

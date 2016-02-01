@@ -11,10 +11,12 @@
           </div>
         </div><!-- /.box-header -->
         <div class="box-body">
-          <p>Ini adalah halaman admin untuk Sistem Pakar Waris. Sayangnya anda tidak bisa menambahkan pengetahuan baru disini. Ini dikarenakan waris sudah ditetapkan sebelumnya. Anda hanya bisa menambahkan informasi terbaru.</p>
+          <p>Ini adalah halaman admin untuk Sistem Informasi Desa. Anda bisa menambahkan data penduduk, data keluarga, dan dapat melihat statistik penduduk anda dalm sebuah laporan penduduk.</p>
         </div><!-- /.box-body -->
         <div class="box-footer clearfix">
-          <a href="<?php echo base_url('informasi');?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-file-o"></i> &nbsp;Informasi</a>&nbsp;
+          <a href="<?php echo base_url('penduduk');?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-file-o"></i> &nbsp;Data Penduduk</a>&nbsp;
+          <a href="<?php echo base_url('keluarga');?>" class="btn btn-sm btn-warning btn-flat"><i class="fa fa-file-o"></i> &nbsp;Data Keluarga</a>&nbsp;
+          <a href="<?php echo base_url('laporan_penduduk');?>" class="btn btn-sm btn-success btn-flat"><i class="fa fa-file-o"></i> &nbsp;Laporan</a>&nbsp;
         </div><!-- /.box-footer -->
       </div><!-- /.box -->
     </div><!-- /.col -->

@@ -59,8 +59,7 @@
         
         <!--<a href="#"><?php echo lang('login_forgot_password');?></a><br>-->
         <div class="social-auth-links text-center">
-          <p><a href="<?php echo base_url('mawaris');?>"><i class="fa "></i>&nbsp; Back To Hitung Waris</a>
-          </p>
+          
         </div><!-- /.social-auth-links -->
       </div><!-- /.login-box-body -->
       

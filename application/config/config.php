@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-$config['app_name'] = "DKD";
+$config['app_name'] = "Aplikasi Sensus";
 
 $config['modules_locations'] = array(
 	APPPATH.'modules/' => '../modules/',
